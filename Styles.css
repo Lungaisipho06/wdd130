@@ -1,0 +1,63 @@
+/* General page styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header navigation */
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+/* Main section */
+main {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+p {
+    padding: 0; /* updated as required */
+}
+
+/* Aside section */
+aside {
+    width: 300px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    border-radius: 10px;
+}
+
+aside img {
+    width: 200px;
+    height: auto; /* keeps aspect ratio */
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    margin-top: 1.5rem;
+    border-top: 2px solid #333;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f2f2f2;
+}
