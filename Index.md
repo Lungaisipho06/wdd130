@@ -18,7 +18,7 @@
     </header>
     <main>
         <h1>Lunga Isipho Mpho | WDD 130</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Cape_Town_City_%28cropped%29.jpg/330px-Cape_Town_City_%28cropped%29.jpg" alt="Hello! My name is Lunga Isipho Mpho" width="200">
+        <img src="images/profile.jpg" alt="Hello! My name is Lunga Isipho Mpho" width="200">
 <p>Hello! My name is Lunga Isipho Mpho. This is my home page for WDD 130, where I am learning the basics of coding. I look forward to building more projects as I improve my web development and coding skills. I love being with family and playing and watching soccer, i also am a fan of sports over all</p>
     </main>
 <!-- New aside section -->
