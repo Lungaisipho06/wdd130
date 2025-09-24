@@ -1,43 +1,44 @@
-/* Define CSS Variables */
+/* ------------------- CSS VARIABLES ------------------- */
 :root {
   --primary-color: #2a9d8f;
   --accent-color: #e9c46a;
   --body-font: 'Arial', sans-serif;
   --heading-font: 'Georgia', serif;
   --text-color: #264653;
+  --footer-bg: #f4f4f4;
 }
 
-/* Reset default margins and paddings */
+/* ------------------- RESET ------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Apply body styles */
+/* ------------------- BODY ------------------- */
 body {
   font-family: var(--body-font);
   color: var(--text-color);
   line-height: 1.6;
+  background-color: #fff;
 }
 
-/* Center content and set max width */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-/* Header layout using CSS Grid */
+/* ------------------- HEADER ------------------- */
 header {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  padding: 20px 0;
 }
 
-header img {
-  max-width: 100%;
+header img.logo {
+  max-width: 150px;
   height: auto;
 }
 
@@ -52,16 +53,16 @@ nav a {
   font-weight: bold;
 }
 
-/* Hero section styling */
+/* ------------------- HERO SECTION ------------------- */
 .hero {
   position: relative;
-  text-align: center;
   margin-bottom: 40px;
 }
 
 .hero img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .hero h1 {
@@ -69,30 +70,36 @@ nav a {
   top: 20px;
   left: 0;
   right: 0;
-  padding: 10px;
-  background-color: var(--primary-color);
-  color: white;
+  padding: 12px;
+  background-color: rgba(42, 157, 143, 0.8);
+  color: #fff;
   font-family: var(--heading-font);
   font-size: 2.5rem;
-  opacity: 0.8;
+  text-align: center;
+  border-radius: 4px;
 }
 
-/* Article styling */
+/* ------------------- HERO ARTICLE ------------------- */
 .hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+  gap: 12px;
 }
 
 .hero article img {
-  width: 150px;
+  width: 120px;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-/* Section styling */
+/* ------------------- SECTION STYLING ------------------- */
 section {
   margin-bottom: 40px;
 }
@@ -103,11 +110,11 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Adventures section styling */
+/* ------------------- ADVENTURES GRID ------------------- */
 .adventures {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
 }
 
 .adventures figure {
@@ -118,26 +125,66 @@ h2 {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
-/* Footer styling */
+.adventures img:hover {
+  transform: scale(1.05);
+}
+
+figcaption {
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+/* ------------------- FOOTER ------------------- */
 footer {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  background-color: var(--accent-color);
+  background-color: var(--footer-bg);
+  border-top: 2px solid var(--accent-color);
 }
 
 footer p {
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .socialmedia {
   display: flex;
-  justify-content: center;
   gap: 15px;
 }
 
 .socialmedia a img {
   width: 24px;
   height: 24px;
+  transition: opacity 0.3s ease;
+}
+
+.socialmedia a img:hover {
+  opacity: 0.7;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+@media (max-width: 860px) {
+  header, main, footer {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero article {
+    flex-direction: column;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .adventures {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
 }
