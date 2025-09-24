@@ -24,7 +24,7 @@
 <!-- New aside section -->
     <aside>
         <h2>South Africa</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Cape_Town_City_%28cropped%29.jpg/330px-Cape_Town_City_%28cropped%29.jpg" alt="A scenic view representing South Africa">
+        <img src="images/profile.jpg" alt="A scenic view representing South Africa">
     <p>South Africa is a diverse and vibrant country known for its beautiful landscapes, wildlife, and rich cultural heritage. It is home to Table Mountain, Kruger National Park, and eleven official languages.</p>
     </aside>
     <footer>
