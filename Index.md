@@ -28,7 +28,7 @@
     <p>South Africa is a diverse and vibrant country known for its beautiful landscapes, wildlife, and rich cultural heritage. It is home to Table Mountain, Kruger National Park, and eleven official languages.</p>
     </aside>
     <footer>
-        <p>&copy; 2025 | Lunga Isipho Mpho | WDD 130</p>
+        <p>&copy; 2025 | Lunga Isipho Mpho | Gauteng, South Africa</p>
     </footer>
 </body>
 </html>
