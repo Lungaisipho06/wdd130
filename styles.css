@@ -32,25 +32,31 @@ main img {
 }
 
 p {
-    padding: 0; /* updated as required */
+    padding: 0;
+    /* updated as required */
 }
 
 /* Aside section */
 aside {
-    width: 300px;
-    margin: 1rem auto;
+    width: 20rem;
+    margin: 1rem;
     padding: 1rem;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    border: 1px solid rgb(red, green, blue);
+    background-color: #eee;
     color: #333;
     text-align: center;
-    border-radius: 10px;
+
 }
 
 aside img {
     width: 200px;
-    height: auto; /* keeps aspect ratio */
-    border-radius: 8px;
+    height: auto;
+    /* keeps aspect ratio */
+}
+
+main img {
+    width: 150px;
+    height: auto;
 }
 
 /* Footer */

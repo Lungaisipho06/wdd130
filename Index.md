@@ -24,8 +24,8 @@
 <!-- New aside section -->
     <aside>
         <h2>South Africa</h2>
-        <img src="images/profile.jpg" alt="Hello! My name is Lunga Isipho Mpho">
-    <p>South Africa is a diverse and vibrant country known for its beautiful landscapes, wildlife, and rich cultural heritage. It is home to Table Mountain, Kruger National Park, and eleven official languages.</p>
+        <img src="images/profile.jpg" alt="Hello! My name is Lunga Isipho Mpho" width="200">
+<p>South Africa is a diverse and vibrant country known for its beautiful landscapes, wildlife, and rich cultural heritage. It is home to Table Mountain, Kruger National Park, and eleven official languages.</p>
     </aside>
     <footer>
         <p>&copy; 2025 | Lunga Isipho Mpho | Gauteng, South Africa</p>
