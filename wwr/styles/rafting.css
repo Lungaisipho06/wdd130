@@ -137,6 +137,120 @@ figcaption {
   font-weight: bold;
 }
 
+/* ------------------- CONTACT PAGE ------------------- */
+
+/* Company info */
+.company-info {
+  background-color: #fdfdfd;
+  border: 1px solid var(--accent-color);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.company-info p {
+  margin-bottom: 8px;
+}
+
+/* Google Map */
+.company-info iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Employee profiles */
+.employee-profiles {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.employee-profiles figure {
+  text-align: center;
+  width: 200px;
+}
+
+.employee-profiles img {
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.employee-profiles figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Contact form */
+.contact-form form {
+  display: grid;
+  gap: 15px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--body-font);
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-form legend {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #21867a;
+}
+
 /* ------------------- FOOTER ------------------- */
 footer {
   display: flex;
@@ -186,5 +300,10 @@ footer p {
 
   .adventures {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .employee-profiles {
+    flex-direction: column;
+    align-items: center;
   }
 }
