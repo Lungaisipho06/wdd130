@@ -1,6 +1,6 @@
 /* Existing styles for the profile image */
 main img {
-  width: 150px;
+  width: auto;
   height: auto;
   /* Add any other existing styles for the profile image */
 }
@@ -37,3 +37,4 @@ footer {
   border-top: 1px solid #ccc;
   text-align: center;
 }
+
