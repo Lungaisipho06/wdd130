@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - White Water Rafting Adventures</title>
+    <meta name="description"
+        content="Contact White Water Rafting Adventures for inquiries, reservations, and questions. Reach us by phone, email, or visit our location.">
+    <meta name="author" content="Lunga Isipho">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-grid">
+            <img src="images/logo.png" alt="White Water Rafting Adventures Logo" class="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-hero">
+            <h1>Contact White Water Rafting Adventures</h1>
+            <p>We're here to help you plan your perfect river adventure!</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Company Information Section -->
+            <section class="company-info">
+                <h2>Get in Touch</h2>
+                <div class="info-grid">
+                    <div class="contact-details">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <strong>Address:</strong>
+                            <p>123 River Canyon Road<br>Rapid City, RC 98765</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong>
+                            <p>(555) 123-RAFT<br>(555) 123-7238</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <p>adventures@whiterafting.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Hours:</strong>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
+                                Saturday: 7:00 AM - 8:00 PM<br>
+                                Sunday: 8:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <h3>Find Us</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.396296432599!2d-111.89188928465604!3d40.81791197932529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f50f3e81c1b1%3A0x5d3c9b2b5b4b5b4b!2s123%20River%20Canyon%20Rd%2C%20Rapid%20City%2C%20UT%2084106!5e0!3m2!1sen!2sus!4v1647891234567!5m2!1sen!2sus"
+                            width="100%" height="300" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="White Water Rafting Adventures Location">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Employee Profiles Section -->
+            <section class="employee-profiles">
+                <h2>Meet Our Team</h2>
+                <div class="employees-grid">
+                    <figure class="employee">
+                        <img src="images/employee1.jpg" alt="Sarah Johnson - Head Guide">
+                        <figcaption>
+                            <strong>Sarah Johnson</strong><br>
+                            Head Guide & Safety Director
+                        </figcaption>
+                    </figure>
+                    <figure class="employee">
+                        <img src="images/employee2.jpg" alt="Mike Rodriguez - Trip Coordinator">
+                        <figcaption>
+                            <strong>Mike Rodriguez</strong><br>
+                            Trip Coordinator & Reservations
+                        </figcaption>
+                    </figure>
+                    <figure class="employee">
+                        <img src="images/employee3.jpg" alt="Emily Chen - Customer Experience Manager">
+                        <figcaption>
+                            <strong>Emily Chen</strong><br>
+                            Customer Experience Manager
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form" action="https://httpbin.org/post" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Purpose of Message:</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="purpose" value="general" required>
+                                <span class="radio-custom"></span>
+                                General Inquiry
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="purpose" value="reservation">
+                                <span class="radio-custom"></span>
+                                Reservation Question
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="purpose" value="suggestion">
+                                <span class="radio-custom"></span>
+                                Website Suggestion
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="newsletter">
+                            <span class="checkbox-custom"></span>
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Your Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 | White Water Rafting Adventures | Lunga Isipho</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
