@@ -70,7 +70,7 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* Hero Section */
+/* Hero Section - About Page */
 .hero {
     position: relative;
     margin-bottom: 40px;
@@ -120,7 +120,7 @@ nav a:hover {
     border: 3px solid var(--secondary-color);
 }
 
-/* History Section */
+/* History Section - About Page */
 .history {
     margin: 50px 0;
     padding: 30px;
@@ -158,7 +158,7 @@ nav a:hover {
     line-height: 1.8;
 }
 
-/* Adventures Section */
+/* Adventures Section - About Page */
 .adventures {
     margin: 50px 0;
     padding: 30px;
@@ -206,6 +206,285 @@ nav a:hover {
     font-weight: bold;
     color: var(--accent1-color);
     font-size: 0.9rem;
+}
+
+/* Contact Page Specific Styles */
+
+/* Contact Hero Section */
+.contact-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+.contact-hero h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Company Information Section */
+.company-info {
+    margin-bottom: 50px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.contact-details h3,
+.map-container h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+}
+
+.contact-item strong {
+    display: block;
+    color: var(--accent1-color);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.contact-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Employee Profiles Section */
+.employee-profiles {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.employees-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.employee {
+    text-align: center;
+    margin: 0;
+}
+
+.employee img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.employee figcaption {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.employee strong {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e5e9;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+/* Radio Button Styles */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 12px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.radio-option input[type="radio"]:checked + .radio-custom {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.radio-option input[type="radio"]:checked + .radio-custom::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-option:hover .radio-custom {
+    border-color: var(--secondary-color);
+}
+
+/* Checkbox Styles */
+.checkbox-group {
+    margin-top: 30px;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.checkbox-option input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 12px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.checkbox-option input[type="checkbox"]:checked + .checkbox-custom {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+.checkbox-option input[type="checkbox"]:checked + .checkbox-custom::after {
+    content: '✓';
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.checkbox-option:hover .checkbox-custom {
+    border-color: var(--secondary-color);
+}
+
+/* Submit Button */
+.submit-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
 }
 
 /* Footer Styles */
@@ -268,6 +547,7 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Header and Navigation */
     .header-grid {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -277,8 +557,10 @@ p {
     nav {
         justify-content: center;
         margin-right: 0;
+        flex-wrap: wrap;
     }
     
+    /* About Page Responsive */
     .hero article {
         width: 80%;
         position: relative;
@@ -295,9 +577,66 @@ p {
         gap: 15px;
     }
     
+    /* Contact Page Responsive */
+    .contact-hero {
+        padding: 40px 20px;
+    }
+    
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .employees-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .employee img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .contact-form-section {
+        padding: 30px 20px;
+    }
+    
+    .radio-group {
+        gap: 8px;
+    }
+    
+    /* Footer Responsive */
     footer {
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .adventure-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+        padding: 15px;
+    }
+    
+    .contact-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .employees-grid {
+        grid-template-columns: 1fr;
     }
 }
