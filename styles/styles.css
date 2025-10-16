@@ -1,0 +1,39 @@
+/* Existing styles for the profile image */
+main img {
+  width: 150px;
+  height: auto;
+  /* Add any other existing styles for the profile image */
+}
+
+/* New styles for the main element */
+main {
+  max-width: 800px; /* Limiting the width of the main content */
+}
+
+/* Styles for the aside element */
+aside {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Style for images inside aside */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Paragraph styling */
+p {
+  padding: 0;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
