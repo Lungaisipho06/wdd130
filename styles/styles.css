@@ -7,7 +7,7 @@ main img {
 
 /* New styles for the main element */
 main {
-  max-width: 800px; /* Limiting the width of the main content */
+  max-width: 840px; /* Limiting the width of the main content */
 }
 
 /* Styles for the aside element */
@@ -37,3 +37,4 @@ footer {
   border-top: 1px solid #ccc;
   text-align: center;
 }
+
